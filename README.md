@@ -1,4 +1,4 @@
-== Cubature Package ==
+## Cubature Package ##
 
 Multidimensional integration ("cubature") code by Steven G. Johnson
 <stevenj@alum.mit.edu>, based in part on code from the GNU Scientific
@@ -10,7 +10,7 @@ p-adaptive integration (increasing the order of the integration rule)
 are supported (the latter being often better for smooth functions in
 low dimensions).
 
-=== Download and Copyright ===
+### Download and Copyright ###
 
 The latest version can be downloaded from: http://ab-initio.mit.edu/cubature/
 
@@ -38,7 +38,7 @@ The latest version can be downloaded from: http://ab-initio.mit.edu/cubature/
   the GNU GPL, v2 or later), copyright (c) 1996-2000 Brian Gough.
        (http://www.gnu.org/software/gsl/)
 
-=== h-adaptive cubature ===
+### h-adaptive cubature ###
 
 The basic algorithm is based on the adaptive cubature described in
  
@@ -81,7 +81,7 @@ as described in:
      http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.6638
      (1994).
 
-=== p-adaptive cubature ===
+### p-adaptive cubature ###
 
 The p-adaptive cubature routine uses a tensor product of
 Clenshaw-Curtis quadrature rules (using the embedded half-order rules
@@ -105,7 +105,7 @@ run it with a larger argument m > 19 (corresponding to degree 2^(m+1)
 rules).
 
 -----------------------------------------------------------------------
-== Usage ==
+## Usage ##
 
 You should compile either hcubature.c or pcubature.c (or both),
 depending on whether you are using h-adaptive or p-adaptive cubature
@@ -188,7 +188,7 @@ additional data, you can just pass FDATA = NULL and ignore the FDATA
 argument to F.
 
 -----------------------------------------------------------------------
-== "Vectorized" interface ==
+## "Vectorized" interface ##
 
 For parallelization and other purposes, it is useful to call a single
 integrand function with an array of points to evaluate, rather than a
