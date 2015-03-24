@@ -1,0 +1,7 @@
+#ifndef CUBATURE_
+#define CUBATURE_
+
+#include "cubature_bits/clencurt.h"
+#include "cubature_bits/cubature.h"
+
+#endif // CUBATURE_
