@@ -32,7 +32,7 @@ aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/src SRC_LIST)
 list(REMOVE_ITEM SRC_LIST ${CMAKE_CURRENT_SOURCE_DIR}/src/clencurt_gen.c)
 
 # -- Build a shared library.
-add_library(${PROJECT_NAME} SHARED ${SRC_LIST})
+add_library(${PROJECT_NAME} STATIC ${SRC_LIST})
 
 
 # -- Define the properties of the library to be built.
